@@ -8,16 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		82296E272179814D0095808E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82296E262179814D0095808E /* AppDelegate.swift */; };
-		82296E292179814D0095808E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82296E282179814D0095808E /* ViewController.swift */; };
+		82296E292179814D0095808E /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82296E282179814D0095808E /* PlacesViewController.swift */; };
 		82296E2C2179814D0095808E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82296E2A2179814D0095808E /* Main.storyboard */; };
 		82296E2E2179814E0095808E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82296E2D2179814E0095808E /* Assets.xcassets */; };
 		82296E40217987BA0095808E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82296E3E217987130095808E /* LaunchScreen.storyboard */; };
+		82296E452179933D0095808E /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82296E442179933D0095808E /* Location.swift */; };
+		82296E48217993A30095808E /* PlacesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82296E47217993A30095808E /* PlacesModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		82296E232179814D0095808E /* Places.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Places.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82296E262179814D0095808E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		82296E282179814D0095808E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		82296E282179814D0095808E /* PlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
 		82296E2B2179814D0095808E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		82296E2D2179814E0095808E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82296E322179814E0095808E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -26,6 +28,9 @@
 		82296E3D2179863B0095808E /* license.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = license.pdf; sourceTree = "<group>"; };
 		82296E3E217987130095808E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		82296E4121798B340095808E /* radar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radar.png; sourceTree = "<group>"; };
+		82296E43217992380095808E /* Lambda_Logo_Full.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Lambda_Logo_Full.pdf; sourceTree = "<group>"; };
+		82296E442179933D0095808E /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		82296E47217993A30095808E /* PlacesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +63,8 @@
 		82296E252179814D0095808E /* Places */ = {
 			isa = PBXGroup;
 			children = (
-				82296E282179814D0095808E /* ViewController.swift */,
+				82296E282179814D0095808E /* PlacesViewController.swift */,
+				82296E462179938F0095808E /* Model */,
 				82296E39217981D40095808E /* Storyboard */,
 				82296E382179815E0095808E /* Resources */,
 			);
@@ -89,11 +95,21 @@
 			isa = PBXGroup;
 			children = (
 				82296E3D2179863B0095808E /* license.pdf */,
+				82296E43217992380095808E /* Lambda_Logo_Full.pdf */,
 				82296E3B217984F40095808E /* 001-radar.png */,
 				82296E4121798B340095808E /* radar.png */,
 				82296E3C217984F40095808E /* 002-collect.png */,
 			);
 			path = Arts;
+			sourceTree = "<group>";
+		};
+		82296E462179938F0095808E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				82296E442179933D0095808E /* Location.swift */,
+				82296E47217993A30095808E /* PlacesModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,7 +183,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82296E292179814D0095808E /* ViewController.swift in Sources */,
+				82296E292179814D0095808E /* PlacesViewController.swift in Sources */,
+				82296E48217993A30095808E /* PlacesModel.swift in Sources */,
+				82296E452179933D0095808E /* Location.swift in Sources */,
 				82296E272179814D0095808E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -16,20 +16,19 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Places" image="radar.png" id="0q5-lo-SiF">
-                        <inset key="imageInsets" minX="0.0" minY="4" maxX="0.0" maxY="4"/>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="Places" image="radar2" id="0q5-lo-SiF"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1126" y="-165"/>
+            <point key="canvasLocation" x="1153" y="-227"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="sBv-vh-hyo">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GwT-9e-ruq" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Pwj-xf-G99" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="X0x-dY-MlC">
@@ -42,7 +41,6 @@
                         <segue destination="gYO-rV-WMb" kind="relationship" relationship="viewControllers" id="znh-PC-q80"/>
                     </connections>
                 </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GwT-9e-ruq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
         </scene>
@@ -71,17 +69,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7PO-nR-1P6"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Credits" image="002-collect" id="Env-Th-RLY">
-                        <inset key="imageInsets" minX="0.0" minY="3" maxX="0.0" maxY="3"/>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="Credits" image="002-collect" id="Env-Th-RLY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZXu-rT-Vip" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1126" y="501"/>
+            <point key="canvasLocation" x="1153" y="466"/>
         </scene>
     </scenes>
     <resources>
         <image name="002-collect" width="64" height="64"/>
-        <image name="radar.png" width="64" height="64"/>
+        <image name="radar2" width="51.200000762939453" height="51.200000762939453"/>
     </resources>
 </document>
