@@ -32,6 +32,9 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="field:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="hAR-pl-p4D"/>
+                                        </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJi-9b-pCv">
                                         <rect key="frame" x="290" y="0.0" width="45" height="30"/>
@@ -39,6 +42,9 @@
                                             <constraint firstAttribute="width" priority="500" constant="45" id="cKO-S9-Mu8"/>
                                         </constraints>
                                         <state key="normal" title="Go"/>
+                                        <connections>
+                                            <action selector="lookuoLocation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fgi-8d-1b4"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -67,6 +73,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Places" image="radar2" id="0q5-lo-SiF"/>
                     <connections>
+                        <outlet property="field" destination="Z1M-Sd-JyR" id="YiB-Yh-WGR"/>
                         <outlet property="placesModel" destination="INc-x1-aI4" id="dxi-wo-YEk"/>
                     </connections>
                 </viewController>
