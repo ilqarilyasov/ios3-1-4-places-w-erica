@@ -13,6 +13,9 @@ class PlacesViewController: UIViewController {
     
     let tableViewControllerSegueIdentifier = "TableViewControllerSegue"
     let mapviewControllerSegueIdentifier = "MapViewControllerSegue"
+    let cellReuseIdentifier = "Cell"
 
+    @IBOutlet weak var placesModel: PlacesModel!
+    
 }
 
